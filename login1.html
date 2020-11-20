@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+        <div class="login-box">
+            <h1>Login</h1>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" name="" id="name" placeholder="Username">
+            </div>
+
+            <div class="textbox">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input type="password" name="" id="password" placeholder="Password">
+            </div>
+
+            <input class="btn" type="button" value="Sign In" onclick="first()">
+            
+        </div>
+        <p>You must have plenty of greetings and wishes to read through&#129303;, so here are some short wedding wishes for you!<br>
+            &#127881;Have a happy and blissful marriage, you two!</p>
+        
+
+    
+    <script>
+        function first() {
+            var x = document.getElementById('name');
+            var y = document.getElementById('password');
+            if (x.value == 'Tanu' && y.value == 'Ina@27')
+
+                window.location.replace("mainwish.html");
+            else
+                alert("ID or password are incorrect.");
+        }  
+    </script>
+    
+</body>
+
+</html>

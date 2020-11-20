@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*background:pink;
+    background-image: url('backg1.jpg');
+    background-image: linear-gradient(to right, #db1bf6,#19d7f8); 
+    background-repeat: no-repeat ;
+    background-size: cover;*/
+    background-image: linear-gradient(to right, #db1bf6,#19d7f8); 
+}
+/*section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(#333, #000);
+   
+}
+.set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.set div{
+    position: absolute;
+    display: block;
+}
+.set div:nth-child(1)
+{
+    left: 20%;
+    animation: animate 15s linear infinite;
+}
+.set div:nth-child(2)
+{
+    left: 80%;
+}
+.set div:nth-child(3)
+{
+    left: 15%;
+}
+.set div:nth-child(4)
+{
+    left: 50%;
+}
+@keyframes animate{
+    0%{
+        top: -10%;
+    }
+    100%
+    {
+        top: 110%;
+    }
+}*/
+/*-------------------------Main---------------------*/
+.wish{
+    margin-top: 40px;
+    text-align: center;
+    background: linear-gradient(180deg, red 0%, blue 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 80px;
+    font-family: 'Monoton', cursive;
+}
+.name{
+    
+    /*margin-left: 460px;*/   
+    padding-left: 225px;
+    margin-top: 20px;
+    text-align: center;
+    color:white;
+    
+    /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    cursor: pointer;
+    font-size: 80px;
+    display: inline-flex;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.wrapper{
+    position: relative;
+    width: 320px;
+    margin: 50px auto;
+    perspective: 1000px;
+    margin-bottom: 500px;
+}
+.img-area{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-300px);
+    animation: animate 25s steps(1000, end) infinite;
+}
+.s-img{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 10px;
+    left: 10px;
+}
+.s-img img{
+    width: 300px;
+    height: 200px;
+    border: 5px solid green;
+}
+.s-img.img1{
+    transform: rotateY(0deg) translateZ(300px);
+}
+.s-img.img2{
+    transform: rotateY(60deg) translateZ(300px);
+}
+.s-img.img3{
+    transform: rotateY(120deg) translateZ(300px);
+}
+.s-img.img4{
+    transform: rotateY(180deg) translateZ(300px);
+}
+.s-img.img5{
+    transform: rotateY(240deg) translateZ(300px);
+}
+.s-img.img6{
+    transform: rotateY(300deg) translateZ(300px);
+}
+img{
+    /*filter: grayscale(70%);*/
+    transition: 1s;
+    cursor: pointer;
+}
+img:hover{
+    transition: 1s;
+    filter: grayscale(0);
+}
+@keyframes animate{
+    from{
+        transform: rotateY(-360deg);
+    }
+    to{
+    transform: rotateY(0deg);;
+    }
+}
+p{
+    
+    font-family: 'Rye', cursive;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
